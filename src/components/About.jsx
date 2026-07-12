@@ -1,4 +1,4 @@
-import { CheckCircle2, User } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 
 const points = [
   'Especialista em Direito da Saúde',
@@ -13,11 +13,7 @@ export default function About() {
       <div className="container about-inner">
         <div className="about-photo">
           <div className="photo-frame">
-            {/* Substitua pelo retrato oficial: <img src="/foto-sobre.jpg" alt="Advogado Viana" /> */}
-            <div className="photo-placeholder">
-              <User size={56} strokeWidth={1} />
-              <span>Foto do advogado (substituir em public/foto-sobre.jpg)</span>
-            </div>
+            <img src="/foto-sobre.jpg" alt="Advogado Viana" />
           </div>
         </div>
 

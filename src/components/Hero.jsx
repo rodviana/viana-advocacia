@@ -1,4 +1,4 @@
-import { ShieldCheck, Zap, Lock, Scale, MessageCircle, User } from 'lucide-react'
+import { ShieldCheck, Zap, Lock, Scale, MessageCircle } from 'lucide-react'
 import { WHATSAPP_URL, OAB } from '@/lib/config'
 
 const features = [
@@ -50,11 +50,7 @@ export default function Hero() {
 
         <div className="hero-photo">
           <div className="photo-frame">
-            {/* Substitua pelo retrato oficial: <img src="/foto-hero.jpg" alt="Advogado Viana" /> */}
-            <div className="photo-placeholder">
-              <User size={64} strokeWidth={1} />
-              <span>Foto do advogado (substituir em public/foto-hero.jpg)</span>
-            </div>
+            <img src="/foto-hero.jpg" alt="Advogado Viana" />
           </div>
 
           <div className="oab-badge">
