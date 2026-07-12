@@ -20,6 +20,25 @@ docker run --rm -p 3000:3000 viana-advocacia
 
 A aplicação ficará disponível em `http://localhost:3000`.
 
+## Docker Compose
+
+Na VPS, depois de clonar o projeto:
+
+```bash
+docker compose up -d --build
+```
+
+O container sobe como `viana-advocacia`, com restart automático, ouvindo apenas em
+`127.0.0.1:3000`. Use nginx na frente para expor `80/443`.
+
+Comandos úteis:
+
+```bash
+docker compose ps
+docker compose logs -f
+docker compose down
+```
+
 ## Deploy na Vercel
 
 1. Suba o repositório no GitHub
